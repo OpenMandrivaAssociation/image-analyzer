@@ -20,7 +20,7 @@ Source:		%name-%snapshot.tar.bz2
 Release:	%mkrel %rel
 Source:		http://downloads.sourceforge.net/cdemu/%name-%version.tar.bz2
 %endif
-Group:		File Tools
+Group:		File tools
 License:	GPLv2+
 URL:		http://cdemu.sourceforge.net/
 BuildRoot:	%{_tmppath}/%{name}-root

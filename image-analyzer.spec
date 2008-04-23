@@ -1,7 +1,7 @@
 
 %define version 1.0.0
 %define snapshot 303
-%define rel	1
+%define rel	2
 
 %if 0
 # Update commands:
@@ -20,7 +20,7 @@ Source:		%name-%snapshot.tar.bz2
 Release:	%mkrel %rel
 Source:		http://downloads.sourceforge.net/cdemu/%name-%version.tar.bz2
 %endif
-Group:		System/Libraries
+Group:		File Tools
 License:	GPLv2+
 URL:		http://cdemu.sourceforge.net/
 BuildRoot:	%{_tmppath}/%{name}-root
@@ -28,7 +28,6 @@ BuildRequires:	mirage-devel
 BuildRequires:	glib2-devel
 BuildRequires:	gtk+2-devel
 BuildRequires:	gtk+extra-2-devel
-
 
 %description
 This is MIRAGE Image Analyzer, a simple Gtk+ application that

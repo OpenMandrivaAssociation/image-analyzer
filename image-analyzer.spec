@@ -1,25 +1,8 @@
-
-%define version 1.0.0
-%define snapshot 635
-%define rel	3
-
-%if 0
-# Update commands:
-REV=$(svn info https://cdemu.svn.sourceforge.net/svnroot/cdemu/trunk/image-analyzer| sed -ne 's/^Last Changed Rev: //p')
-svn export -r $REV https://cdemu.svn.sourceforge.net/svnroot/cdemu/trunk/image-analyzer image-analyzer-$REV
-tar -cjf image-analyzer-$REV.tar.bz2 image-analyzer-$REV
-%endif
-
 Name:		image-analyzer
-Version:	%version
+Version:	1.4.0
 Summary:	MIRAGE Image Analyzer
-%if %snapshot
-Release:	%mkrel 1.svn%snapshot.%rel
-Source:		%name-%snapshot.tar.bz2
-%else
-Release:	%mkrel %rel
-Source:		http://downloads.sourceforge.net/cdemu/%name-%version.tar.bz2
-%endif
+Release:	1
+Source:		http://downloads.sourceforge.net/cdemu/%name-%version.tar.gz
 Group:		File tools
 License:	GPLv2+
 URL:		http://cdemu.sourceforge.net/
@@ -37,21 +20,13 @@ can be also used to verify that an image is correctly handled by
 libMirage.
 
 %prep
-%if %snapshot
-%setup -q -n %name-%snapshot
-%else
 %setup -q
-%endif
 
 %build
-%if %snapshot
-./autogen.sh
-%endif
 %configure2_5x
 %make
 
 %install
-rm -rf %buildroot
 %makeinstall_std
 
 install -d -m755 %{buildroot}%{_datadir}/applications
@@ -65,11 +40,7 @@ Type=Application
 Categories=GTK;DiscBurning;Utility;
 EOF
 
-%clean
-rm -rf %{buildroot}
-
 %files
-%defattr(-,root,root)
 %doc README AUTHORS
 %{_bindir}/%{name}
 %{_datadir}/applications/mandriva-%{name}.desktop

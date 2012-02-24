@@ -28,19 +28,8 @@ libMirage.
 %install
 %makeinstall_std
 
-install -d -m755 %{buildroot}%{_datadir}/applications
-cat > %{buildroot}%{_datadir}/applications/mandriva-%{name}.desktop <<EOF
-[Desktop Entry]
-Name=MIRAGE Image Analyzer
-Comment=Analyze disc images
-Exec=%{_bindir}/%{name}
-Icon=data_visualization_section
-Type=Application
-Categories=GTK;DiscBurning;Utility;
-EOF
-
 %files
 %doc README AUTHORS
 %{_bindir}/%{name}
-%{_datadir}/applications/mandriva-%{name}.desktop
+%{_datadir}/applications/%{name}.desktop
 

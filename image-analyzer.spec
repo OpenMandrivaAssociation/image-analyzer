@@ -7,10 +7,9 @@ License:	GPLv2+
 URL:		http://cdemu.sourceforge.net/
 Source0:	http://downloads.sourceforge.net/cdemu/%name-%version.tar.bz2
 
-BuildRequires:	mirage-devel
-BuildRequires:	glib2-devel
-BuildRequires:	gtk+2-devel
-BuildRequires:	gtk+extra-2-devel
+BuildRequires:	pkgconfig(glib-2.0)
+BuildRequires:	pkgconfig(gtk+-3.0)
+BuildRequires:	pkgconfig(libmirage)
 
 %description
 This is MIRAGE Image Analyzer, a simple Gtk+ application that

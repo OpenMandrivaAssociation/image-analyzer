@@ -1,12 +1,12 @@
 Name:		image-analyzer
-Version:	1.4.0
+Version:	1.5.0
 Summary:	MIRAGE Image Analyzer
 Release:	1
-Source:		http://downloads.sourceforge.net/cdemu/%name-%version.tar.gz
 Group:		File tools
 License:	GPLv2+
 URL:		http://cdemu.sourceforge.net/
-BuildRoot:	%{_tmppath}/%{name}-root
+Source0:	http://downloads.sourceforge.net/cdemu/%name-%version.tar.bz2
+
 BuildRequires:	mirage-devel
 BuildRequires:	glib2-devel
 BuildRequires:	gtk+2-devel

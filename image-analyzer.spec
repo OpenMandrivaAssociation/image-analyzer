@@ -1,11 +1,11 @@
 Name:		image-analyzer
-Version:	1.5.0
+Version:	2.0.0
 Summary:	MIRAGE Image Analyzer
 Release:	1
 Group:		File tools
 License:	GPLv2+
 URL:		http://cdemu.sourceforge.net/
-Source0:	http://downloads.sourceforge.net/cdemu/%name-%version.tar.bz2
+Source0:	https://sourceforge.net/projects/cdemu/files/image-analyzer/%{name}-%{version}.tar.bz2
 
 BuildRequires:	pkgconfig(glib-2.0)
 BuildRequires:	pkgconfig(gtk+-3.0)
@@ -66,4 +66,5 @@ libMirage.
 * Wed Apr 23 2008 Anssi Hannula <anssi@mandriva.org> 1.0.0-1.svn303.1mdv2009.0
 + Revision: 196933
 - initial Mandriva release
+
 

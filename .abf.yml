@@ -1,2 +1,4 @@
+removed_sources:
+  image-analyzer-1.5.0.tar.bz2: a5a5571bffd92a36bc8db4c5fd99b33e0a32fcd4
 sources:
-  "image-analyzer-1.5.0.tar.bz2": a5a5571bffd92a36bc8db4c5fd99b33e0a32fcd4
+  image-analyzer-2.0.0.tar.bz2: c1f98b741acbe3930b9da0b971bb8254ef9718ff

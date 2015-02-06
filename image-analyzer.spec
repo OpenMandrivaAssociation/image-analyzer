@@ -1,7 +1,7 @@
 Summary:	An application that displays tree structure of disc image
 Name:		image-analyzer
 Version:	2.1.1
-Release:	1
+Release:	2
 Group:		File tools
 License:	GPLv2+
 Url:		http://cdemu.sourceforge.net

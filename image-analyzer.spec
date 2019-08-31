@@ -29,6 +29,8 @@ can be also used to verify that an image is correctly handled by libMirage.
 %{_bindir}/%{name}
 %{_datadir}/applications/%{name}.desktop
 %{_datadir}/pixmaps/image-analyzer.svg
+%{_datadir}/locale/ru/LC_MESSAGES/image-analyzer.mo
+%{_datadir}/locale/sl/LC_MESSAGES/image-analyzer.mo
 
 #----------------------------------------------------------------------------
 

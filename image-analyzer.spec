@@ -28,7 +28,7 @@ can be also used to verify that an image is correctly handled by libMirage.
 %doc AUTHORS ChangeLog
 %{_bindir}/%{name}
 %{_datadir}/applications/%{name}.desktop
-%{_iconsdir}/hicolor/scalable/apps/%{name}.svg
+%{_iconsdir}/pixmaps/image-analyzer.svg
 
 #----------------------------------------------------------------------------
 

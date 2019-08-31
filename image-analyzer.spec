@@ -7,6 +7,7 @@ License:	GPLv2+
 Url:		http://cdemu.sourceforge.net
 Source0:	http://downloads.sourceforge.net/cdemu/%{name}-%{version}.tar.bz2
 BuildRequires:	cmake
+BuildRequires:	intltool
 BuildRequires:	pkgconfig(gtk+-3.0)
 BuildRequires:	pkgconfig(libxml-2.0)
 BuildRequires:	pkgconfig(libmirage)

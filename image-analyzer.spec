@@ -23,9 +23,8 @@ of disc image created by libMirage.
 It is mostly intended as a demonstration of libMirage API use, although it
 can be also used to verify that an image is correctly handled by libMirage.
 
-%find_lang %{name}
 
-%files -f %{name}.lang
+%files
 %doc AUTHORS ChangeLog
 %{_bindir}/%{name}
 %{_datadir}/applications/%{name}.desktop

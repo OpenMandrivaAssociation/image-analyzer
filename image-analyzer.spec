@@ -1,6 +1,6 @@
 Summary:	An application that displays tree structure of disc image
 Name:		image-analyzer
-Version:	3.2.3
+Version:	3.2.4
 Release:	1
 Group:		File tools
 License:	GPLv2+

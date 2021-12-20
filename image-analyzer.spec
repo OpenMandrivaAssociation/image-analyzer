@@ -1,11 +1,11 @@
 Summary:	An application that displays tree structure of disc image
 Name:		image-analyzer
-Version:	3.2.4
+Version:	3.2.5
 Release:	1
 Group:		File tools
 License:	GPLv2+
 Url:		http://cdemu.sourceforge.net
-Source0:	http://downloads.sourceforge.net/cdemu/%{name}-%{version}.tar.bz2
+Source0:	http://downloads.sourceforge.net/cdemu/%{name}-%{version}.tar.xz
 BuildRequires:	cmake
 BuildRequires:	intltool
 BuildRequires:	pkgconfig(gtk+-3.0)
@@ -35,7 +35,7 @@ can be also used to verify that an image is correctly handled by libMirage.
 #----------------------------------------------------------------------------
 
 %prep
-%setup -q
+%autosetup -p1
 
 %build
 %cmake -DPOST_INSTALL_HOOKS:BOOL=OFF
@@ -43,5 +43,3 @@ can be also used to verify that an image is correctly handled by libMirage.
 
 %install
 %make_install -C build
-
-

@@ -1,3 +1,5 @@
+%define _empty_manifest_terminate_build 0
+
 Summary:	An application that displays tree structure of disc image
 Name:		image-analyzer
 Version:	3.2.5
